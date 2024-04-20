@@ -1,8 +1,6 @@
 <template>
   <div>
-    <NuxtLink to="/"><van-button type="primary">首页</van-button></NuxtLink>
-    <NuxtLink to="/video"><van-button type="primary">视频</van-button></NuxtLink>
-    <NuxtPage/>
+    <NuxtPage :keepalive="{max: 10}"/>
   </div>
 </template>
 <script setup lang="ts">
